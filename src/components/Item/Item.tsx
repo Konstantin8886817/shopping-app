@@ -1,7 +1,7 @@
 import { Container, Wrapper } from './Item.styles';
-import Button from '@material-ui/core/Button';
 import { CartItemType } from '../../App';
 import { FC } from 'react';
+import { Button } from '@material-ui/core';
 
 type ItemProps = {
 	item: CartItemType;
