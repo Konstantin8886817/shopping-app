@@ -1,0 +1,15 @@
+{
+	"tabWidth": 4,
+	"printWidth": 150,
+	"singleQuote": true,
+	"useTabs": true,
+	"jsxBracketSameLine": false,
+	"arrowParens": "always",
+	"flattenTernaries": false,
+	"jsxSingleQuote": false,
+	"noSpaceEmptyFn": true,
+	"spaceBeforeFunctionParen": false,
+	"breakProperty": true,
+	"autoScroll": false,
+	"openOutput": false
+}
