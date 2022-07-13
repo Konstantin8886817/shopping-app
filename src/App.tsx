@@ -4,22 +4,9 @@ import { Badge, Drawer, Grid, LinearProgress } from '@material-ui/core';
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { ButtonStyled, Wrapper } from './App.styles';
 import { Item, Cart } from './components';
+import { CartItemType, getProducts } from './utils/sharedUtils';
 
-export type CartItemType = {
-	id: number;
-	category: string;
-	description: string;
-	image: string;
-	price: number;
-	title: string;
-	amount: number;
-};
-
-const getProducts = async (): Promise<CartItemType[]> => {
-	return await (await fetch('https://fakestoreapi.com/products')).json();
-};
-
-const App = () => {
+export const App = () => {
 	const [isCartOpen, setIsCartOpen] = useState(false);
 	const [cartItems, setCartItems] = useState([] as CartItemType[]);
 	const { data, isLoading, error } = useQuery<CartItemType[]>('products', getProducts);
@@ -74,5 +61,3 @@ const App = () => {
 		</Wrapper>
 	);
 };
-
-export default App;

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { CartItem } from '..';
-import { CartItemType } from '../../App';
+import { CartItemType } from '../../utils/sharedUtils';
 import { Wrapper } from './Cart.styles';
 
 type CartProps = {

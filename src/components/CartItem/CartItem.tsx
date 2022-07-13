@@ -1,6 +1,6 @@
 import { Button } from '@material-ui/core';
 import { FC } from 'react';
-import { CartItemType } from '../../App';
+import { CartItemType } from '../../utils/sharedUtils';
 import { Wrapper, AmountStyled } from './CartItem.styles';
 
 type CartItemProps = {
